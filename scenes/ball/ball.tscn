@@ -69,7 +69,9 @@ radius = 4.0
 
 [node name="Ball" type="AnimatableBody2D" unique_id=1406910643]
 collision_layer = 4
+sync_to_physics = false
 script = ExtResource("1_stoaj")
+offset_from_player = Vector2(10, 3)
 
 [node name="BallSprite" type="Sprite2D" parent="." unique_id=1940761551]
 texture = ExtResource("1_nv6q1")
@@ -82,6 +84,7 @@ position = Vector2(0, -5)
 shape = SubResource("CircleShape2D_xotqv")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="." unique_id=1955293998]
+unique_name_in_owner = true
 libraries/ = SubResource("AnimationLibrary_r8c1m")
 autoplay = &"Idle"
 
