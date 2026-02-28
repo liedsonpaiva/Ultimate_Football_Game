@@ -28,16 +28,20 @@ centered = false
 [node name="ActorsContainer" type="Node2D" parent="." unique_id=957183598]
 y_sort_enabled = true
 
-[node name="Player" parent="ActorsContainer" unique_id=1584616112 instance=ExtResource("4_k0juu")]
+[node name="Player" parent="ActorsContainer" unique_id=1584616112 node_paths=PackedStringArray("ball") instance=ExtResource("4_k0juu")]
 position = Vector2(123, 98)
+ball = NodePath("../Ball")
 
-[node name="Player2" parent="ActorsContainer" unique_id=1830885617 instance=ExtResource("4_k0juu")]
+[node name="Player2" parent="ActorsContainer" unique_id=1830885617 node_paths=PackedStringArray("ball") instance=ExtResource("4_k0juu")]
 position = Vector2(162, 149)
+ball = NodePath("../Ball")
 control_scheme = 1
 
-[node name="Player3" parent="ActorsContainer" unique_id=610224092 instance=ExtResource("4_k0juu")]
+[node name="Player3" parent="ActorsContainer" unique_id=610224092 node_paths=PackedStringArray("ball") instance=ExtResource("4_k0juu")]
 position = Vector2(205, 99)
+ball = NodePath("../Ball")
 control_scheme = 2
 
 [node name="Ball" parent="ActorsContainer" unique_id=1406910643 instance=ExtResource("5_71j4m")]
 position = Vector2(182, 148)
+offset_from_player = null
